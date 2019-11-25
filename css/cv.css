@@ -1,0 +1,242 @@
+/**** RESET ****/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  } 
+
+/*##################### GENERAL ########################################*/
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+/*######################### Body #####################################*/
+.container{
+  width: 70%;
+  margin: 0px auto;
+}
+	/********* En-tete ************/
+header{
+    background-color:rgba(255, 140, 0,.7);
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+   -webkit-flex-direction: row;
+    width: 100%;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.descriptive{
+	padding: 5px 20px;
+	line-height: 1.5;
+}
+.descriptive h2{
+	font-size: 1.3em;
+	font-weight: both;
+	color: white;
+}
+h1{
+	font-family: 'Roboto',sans-serif;
+	font-weight: both;
+	color: white;
+	font-size: 1.5em;
+}
+.descriptive p:nth-child(2n+1){
+	padding-top: 10px;
+}
+				/********** Image principale **************/
+figure{
+	width: 11%;
+	margin-top: 10px;
+}
+#picture{
+  transform: rotate(-90deg);
+  width: 100%;
+  padding: 0 !important;
+}
+	/*********************** Contenu Principal *************************/
+main{
+  display: flex;
+  justify-content: space-between;
+  
+}
+ul{
+	font-size: .9em;
+}
+		/************************ Academy ***********************************/
+/*#academy{
+	width: 0%;
+}*/
+				/************* Premier section ******************/
+.row{
+	margin-bottom: 10px;
+}
+.title{
+	text-transform: uppercase;
+	padding-top: 14px;
+	font-weight: bold;
+	color: orange;
+}
+ul.firstListe > li {
+	padding: 5px 0;
+	list-style: none;
+	font-weight: bold;
+}
+#experience .secondListe li{
+	margin-left: 50px;
+	font-weight: normal !important;
+}
+.fonctionExp, .study, .studyPre{
+	text-transform: uppercase;
+	color: orange;
+	padding-left: 10px;
+	font-weight: normal !important;
+}
+.exalogPicture, .betterPicture{
+	margin: -20px 0 15px 540px;
+	height: 5px;
+}
+.kakelikoPicture{margin: -20px 0 15px 430px;height: 5px;}
+.tractafricPicture{margin: -20px 0 15px 500px;height: 5px;}
+
+		/************* Deuxièmeme section *********************/
+#formation .firstListe p{font-weight: normal !important;}
+#formation .firstListe .studyPre{
+	margin-left: 30px;
+}
+#formation .firstListe .study{
+	margin-left: 50px;
+}
+#formation .firstListe p{
+	margin-left: 170px;
+	color: gray;
+}
+	/******************* skillLevel *******************************/
+#skillLevel{
+	background-color: rgba(211,211,211,.2);
+	width: 40%;
+}
+		/******************** Troisième section *******************/
+#skillLevel #skill .firstListeSkill li{
+	margin-left: 30px;
+	list-style-image:  url("../photos/starsolid.png");
+	text-transform: capitalize;
+
+}
+#skill .secondListeSkills li, #skill .secondListeSkill li{
+	margin-left: 20px !important;
+	font-weight: normal !important;
+	list-style: none !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+	font-size: .9em;
+}
+.secondListeSkills li{ padding : 5px !important;}
+.secondListeSkill li{ display:inline-block !important; padding-left: 20px !important;}
+.infos{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.infos .progress{
+  width: 40%;
+  margin: auto 0px;
+}
+.infos  #php{
+  width: 45% !important;
+}
+			/******************** Quatrième section ****************************/
+#languages .listeLanguages li{
+	list-style: none;
+	text-transform: capitalize;
+	padding-top: 5px;
+}
+.languages{
+	 display: flex;
+	 justify-content: space-around;
+}
+.languages .progress{
+  width: 50%;
+  margin: auto 0px;
+} 
+			/******************** Cinquième section *****************************/
+#hobbies ul{margin-left: 40px;}
+#hobbies ul li{
+	list-style: none;
+	display: inline;
+	text-transform: capitalize;
+	padding: 0 10px;
+}
+/***************** Address ***********************/
+address{ margin-left: 25px;}
+#phone, #address, #linkedln, #mail{
+	display: flex;
+	justify-content: start;
+}
+address p{font-size: .8em;}
+.testTel, .testLien, .testEmail{ padding: 10px 0 0 20px;}
+.testAdres{ padding: 5px 0 0 20px;}
+#achievements{
+	text-align: right; 
+	text-shadow: 1px 1px 2px blue;
+	margin-right: 20px;
+}
+#achievements a{
+	text-decoration: none;	
+	text-transform: capitalize;
+	color: orange;
+}
+#achievements a:hover{ color : green;}
+#achievements a:visited, #achievements a:active{ color : tomato;}
+footer{
+	background-color:rgba(255, 140, 0,.7);
+	height: 10px;
+	width: 60%;
+}
+.fa{
+  font-size: 3em;
+}
+.btn-warning{
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
